@@ -1,0 +1,112 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0ea5e9, #2563eb);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e3a8a;
+    padding: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* Section */
+section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Collapsible content */
+.collapsible {
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #1d4ed8;
+}
+
+.content {
+    background-color: #e0f2fe;
+    display: none;
+    padding: 1.2rem;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Links */
+a {
+    color: #1e40af;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+/* Titles */
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
